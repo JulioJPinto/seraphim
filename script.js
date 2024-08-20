@@ -80,6 +80,11 @@ function createTimelineOnload() {
     createTimeline('timeline-mobile');
 }
 
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('hidden');
+}
+
 /*
 const profileData = {
     "contacts": [
