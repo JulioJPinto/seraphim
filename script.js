@@ -52,14 +52,14 @@ function createTimeline(data) {
     
             if (index === 0) {
                 const title = document.createElement('a');
-                title.className = 'title kulim-park-semibold text-xl text-text';
+                title.className = 'title kulim-park-semibold text-md md:text-lg lg:text-xl text-text';
                 title.textContent = item.organization;
                 title.href = item.link;
                 content.appendChild(title);
             }
     
             const positionElem = document.createElement('div');
-            positionElem.className = 'position kulim-park-regular text-md text-text';
+            positionElem.className = 'position kulim-park-regular text-xs md:text-sm lg:text-md text-text';
             positionElem.textContent = position;
     
             content.appendChild(positionElem);

@@ -25,20 +25,21 @@
 </head>
 <body class="overflow-hidden">
   <div class="container mx-auto py-4 h-screen">
-      <div class="mx-16 flex flex-row justify-center gap-6 items-center h-full">
+    <div class="flex flex-col mx-16 h-full gap-6">
+      <div class="flex flex-row justify-center gap-6 items-center h-[90%] lg:h-full">
           
           <!-- Left Column -->
           <div class="flex flex-col w-full h-full gap-6">
               <!-- Header Section -->
-              <div class="bg-secondary rounded-2xl p-8">
-                  <p class="text-8xl font-semibold text-text my-1 kulim-park-bold">Júlio Pinto</p>
-                  <p class="text-4xl font-regular text-text kulim-park-light">software engineering student</p>
-                  <p class="text-4xl font-regular text-text kulim-park-light">@ u.minho</p>
+              <div class="bg-secondary rounded-2xl p-4 lg:p-8">
+                  <p class="text-2xl md:text-5xl xl:text-8xl font-semibold text-text my-1 kulim-park-bold">Júlio Pinto</p>
+                  <p class="text-md md:text-xl xl:text-4xl font-regular text-text kulim-park-light">software engineering student</p>
+                  <p class="text-md md:text-xl xl:text-4xl font-regular text-text kulim-park-light">@ u.minho</p>
               </div>
 
               <!-- Experience Section -->
-              <div class="bg-primary rounded-2xl px-8 py-4 flex-grow min-h-0 overflow-auto">
-                  <p class="text-4xl font-semibold text-text my-1 kulim-park-semibold">Experience & Associations</p>
+              <div class="bg-primary rounded-2xl p-4 lg:px-8 flex-grow min-h-0 overflow-auto">
+                  <p class="text-xl xl:text-4xl font-semibold text-text my-1 kulim-park-semibold">Experience</p>
                   <div class="mt-4">
                       <div id="timeline"></div>
                       <script src="script.js"></script>
@@ -46,47 +47,58 @@
               </div>
 
               <!-- Footer Section (Social Media Links) -->
-              <div class="bg-secondary w-full rounded-2xl px-8 py-4 mt-auto">
-                  <div class=",x-auto">
-                    <div class="flex gap-6 space-x-6 align-items-center">
-                      <div class="flex flex-row justify-items-center material-symbols-outlined text-text text-xl">
-                          <i class="material-icons text-text mt-1">email</i>
-                          <a href="mailto:me@juliojpinto.com" class="kulim-park-regular ml-2">me@juliojpinto.com</a>
-                      </div>
-                      <div class="flex flex-row justify-items-center material-symbols-outlined text-text text-xl">
-                        <a href="" class="kulim-park-regular mx-1">Github</a>
-                      </div>
-                      <div class="flex flex-row justify-items-center material-symbols-outlined text-text text-xl">
-                        <a href="" class="kulim-park-regular mx-1">Linkedin</a>
-                      </div>
-                      <div class="flex flex-row justify-items-center material-symbols-outlined text-text text-xl">
-                        <a href="" class="kulim-park-regular mx-1">Instagram</a>
-                      </div>
+              <div class="hidden lg:block bg-secondary w-full rounded-2xl px-8 py-4 mt-auto">
+                <div class="flex justify-between items-center">
+                    <!-- Email section aligned to the left -->
+                    <div class="flex flex-row items-center">
+                        <i class=" material-icons text-text text-xl mt-1">email</i>
+                        <a href="mailto:me@juliojpinto.com" class="hidden xl:block text-xl text-text kulim-park-regular ml-2">me@juliojpinto.com</a>
                     </div>
-                  </div>
-                  
+                    
+                    <!-- Links section aligned to the right -->
+                    <div class="flex flex-row gap-6">
+                        <a href="https://github.com/JulioJPinto/" class="kulim-park-regular text-xl  text-text mx-1">Github</a>
+                        <a href="https://www.linkedin.com/in/juliojpinto/" class="kulim-park-regular text-xl  text-text mx-1">Linkedin</a>
+                    </div>
+                </div>
               </div>
+            
           </div>
 
           <!-- Right Column -->
           <div class="flex flex-col w-full h-full gap-6">
-              <div class="text-lg bg-primary rounded-2xl p-8">
-                  <div class="flex flex-row justify-between items-center">
-                      <img class="rounded-2xl" src="public/me.png" width="500" height="500">
-                      <p class="text-3xl font-semibold text-text long-cang-regular text-left place-self-end -rotate-90 origin-left -my-4 -mx-8 scale-[3]">SEI' 23</p>
+              <div class="text-lg bg-primary rounded-2xl p-4 lg:p-8">
+                  <div class="flex flex-col 2xl:flex-row justify-between items-center gap-6">
+                      <img class="rounded-2xl" src="public/me.png">
+                      <p class="text-xl lg:text-3xl text-text long-cang-regular text-left place-self-start scale-[2] 2xl:place-self-end 2xl:-rotate-90 origin-left 2xl:-my-4 2xl:-mx-12 2xl:scale-[3]">SEI' 23</p>
                   </div>
               </div>
-              <div class="bg-primary rounded-2xl px-8 py-4 flex-grow min-h-0 overflow-auto">
+              <div class="bg-primary rounded-2xl p-4 lg:px-8 flex-grow min-h-0 overflow-auto">
                   <p class="text-3xl font-semibold text-text my-1 kulim-park-semibold">About me</p>
-                  <div class="mt-4">
-                      <p class="text-xl text-justify font-regular text-text kulim-park-light">
+                  <div class="mt-2 md:mt-4">
+                      <p class="text-sm lg:text-xl text-justify font-regular text-text kulim-park-light">
                         I'm a software engineering student at the University of Minho, currently in my 3rd year. I'm passionate about technology and software development, and I'm always looking for new challenges and opportunities to learn and grow.
                       </p>
                   </div>
               </div>
           </div>
-
       </div>
+      <div class="lg:hidden bg-secondary w-full rounded-2xl px-8 py-4 mt-auto">
+        <div class="flex justify-between items-center">
+            <!-- Email section aligned to the left -->
+            <div class="flex flex-row items-center">
+                <i class=" material-icons text-text text-xl mt-1">email</i>
+                <a href="mailto:me@juliojpinto.com" class="hidden xl:block text-xl text-text kulim-park-regular ml-2">me@juliojpinto.com</a>
+            </div>
+            
+            <!-- Links section aligned to the right -->
+            <div class="flex flex-row gap-6">
+                <a href="https://github.com/JulioJPinto/" class="kulim-park-regular text-xl  text-text mx-1">Github</a>
+                <a href="https://www.linkedin.com/in/juliojpinto/" class="kulim-park-regular text-xl  text-text mx-1">Linkedin</a>
+            </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 
