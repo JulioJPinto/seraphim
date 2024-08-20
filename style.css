@@ -1,19 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Long+Cang&display=swap');
 
 * {
   box-sizing: border-box;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
 }
 
 .kulim-park-extralight {
@@ -76,6 +66,11 @@ body {
     font-style: italic;
   }
 
+  .long-cang-regular {
+    font-family: "Long Cang", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
 
   #timeline {
     display: flex;
@@ -84,17 +79,26 @@ body {
 }
 
 .timeline-item {
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  align-items: center; /* Center bullets and text vertically */
+}
+
+.timeline-item .bullet-first {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #2e6b6b;
+  margin-right: 15px;
+  /* Remove margin-top to prevent misalignment */
 }
 
 .timeline-item .bullet {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #2e6b6b;
-    margin-right: 15px;
-    margin-top: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #2e6b6b;
+  margin-right: 15px;
+  /* Remove margin-top to prevent misalignment */
 }
 
 .timeline-item .content {
@@ -102,15 +106,26 @@ body {
     flex-direction: column;
 }
 
-.timeline-item .content .title {
-    font-weight: bold;
-    font-size: 1.1em;
-    color: #2e6b6b;
-    margin-bottom: 5px;
+#contact-info {
+  margin-top: 20px; /* Adjust as necessary */
 }
 
-.timeline-item .content .position {
-    font-size: 0.95em;
-    color: #385c5c;
+#email-info a {
+  color: #ffffff; /* Or any color that fits your design */
 }
-  
+
+#social-media-links img {
+  transition: transform 0.3s ease;
+}
+
+#social-media-links img:hover {
+  transform: scale(1.2);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}

@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Júlio Pinto</title>
   <script>
@@ -21,34 +23,71 @@
     }
   </script>
 </head>
-<body>
-    <div class="container">
-      <div class="flex flex-row justify-center gap-6 items-center h-screen">
-        <div class="flex flex-col w-full h-full gap-6">
-          <div class="bg-primary rounded-2xl p-8">
-            <p class="text-7xl font-semibold text-text my-1 kulim-park-bold">Júlio Pinto</p>
-            <p class="text-3xl font-regular text-text kulim-park-light">software engineering student</p>
-            <p class="text-3xl font-regular text-text kulim-park-light">@ u.minho</p>
+<body class="overflow-hidden">
+  <div class="container mx-auto py-4 h-screen">
+      <div class="mx-16 flex flex-row justify-center gap-6 items-center h-full">
+          
+          <!-- Left Column -->
+          <div class="flex flex-col w-full h-full gap-6">
+              <!-- Header Section -->
+              <div class="bg-secondary rounded-2xl p-8">
+                  <p class="text-8xl font-semibold text-text my-1 kulim-park-bold">Júlio Pinto</p>
+                  <p class="text-4xl font-regular text-text kulim-park-light">software engineering student</p>
+                  <p class="text-4xl font-regular text-text kulim-park-light">@ u.minho</p>
+              </div>
+
+              <!-- Experience Section -->
+              <div class="bg-primary rounded-2xl px-8 py-4 flex-grow min-h-0 overflow-auto">
+                  <p class="text-4xl font-semibold text-text my-1 kulim-park-semibold">Experience & Associations</p>
+                  <div class="mt-4">
+                      <div id="timeline"></div>
+                      <script src="script.js"></script>
+                  </div>
+              </div>
+
+              <!-- Footer Section (Social Media Links) -->
+              <div class="bg-secondary w-full rounded-2xl px-8 py-4 mt-auto">
+                  <div class=",x-auto">
+                    <div class="flex gap-6 space-x-6 align-items-center">
+                      <div class="flex flex-row justify-items-center material-symbols-outlined text-text text-xl">
+                          <i class="material-icons text-text mt-1">email</i>
+                          <a href="mailto:me@juliojpinto.com" class="kulim-park-regular ml-2">me@juliojpinto.com</a>
+                      </div>
+                      <div class="flex flex-row justify-items-center material-symbols-outlined text-text text-xl">
+                        <a href="" class="kulim-park-regular mx-1">Github</a>
+                      </div>
+                      <div class="flex flex-row justify-items-center material-symbols-outlined text-text text-xl">
+                        <a href="" class="kulim-park-regular mx-1">Linkedin</a>
+                      </div>
+                      <div class="flex flex-row justify-items-center material-symbols-outlined text-text text-xl">
+                        <a href="" class="kulim-park-regular mx-1">Instagram</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
           </div>
 
-          <div class="bg-primary rounded-2xl p-8">
-            <p class="text-3xl font-semibold text-text my-1 kulim-park-semibold">Experience & Associations</p>
-            <div class="mt-4">
-              <div id="timeline"></div>
-              <script src="script.js"></script>
-            </div>
-            <div>
-              
-
-            </div>
-
+          <!-- Right Column -->
+          <div class="flex flex-col w-full h-full gap-6">
+              <div class="text-lg bg-primary rounded-2xl p-8">
+                  <div class="flex flex-row justify-between items-center">
+                      <img class="rounded-2xl" src="public/me.png" width="500" height="500">
+                      <p class="text-3xl font-semibold text-text long-cang-regular text-left place-self-end -rotate-90 origin-left -my-4 -mx-8 scale-[3]">SEI' 23</p>
+                  </div>
+              </div>
+              <div class="bg-primary rounded-2xl px-8 py-4 flex-grow min-h-0 overflow-auto">
+                  <p class="text-3xl font-semibold text-text my-1 kulim-park-semibold">About me</p>
+                  <div class="mt-4">
+                      <p class="text-xl text-justify font-regular text-text kulim-park-light">
+                        I'm a software engineering student at the University of Minho, currently in my 3rd year. I'm passionate about technology and software development, and I'm always looking for new challenges and opportunities to learn and grow.
+                      </p>
+                  </div>
+              </div>
           </div>
-          </div>
-        <div class="flex flex-col w-full h-full gap-6">
-          <h1 class="bg-primary rounded-lg">Hello, World!</h1>
-          <p class="text-lg bg-primary rounded-lg">This is a Tailwind CSS template.</p>
-        </div>
+
       </div>
-    </div>
+  </div>
 </body>
+
 </html>
