@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
   <title>Júlio Pinto</title>
   <script>
     tailwind.config = {
@@ -23,9 +24,9 @@
     }
   </script>
 </head>
-<body class="overflow-hidden">
-  <div class="container mx-auto py-4 h-screen">
-    <div class="flex flex-col mx-16 h-full gap-6">
+<body class="overflow-hidden" onload="createTimelineOnload()">
+  <div class="hidden md:block container mx-auto py-4 h-screen">
+    <div class="flex flex-col lg:mx-16 h-full gap-6">
       <div class="flex flex-row justify-center gap-6 items-center h-[90%] lg:h-full">
           
           <!-- Left Column -->
@@ -42,7 +43,6 @@
                   <p class="text-xl xl:text-4xl font-semibold text-text my-1 kulim-park-semibold">Experience</p>
                   <div class="mt-4">
                       <div id="timeline"></div>
-                      <script src="script.js"></script>
                   </div>
               </div>
 
@@ -51,8 +51,8 @@
                 <div class="flex justify-between items-center">
                     <!-- Email section aligned to the left -->
                     <div class="flex flex-row items-center">
-                        <i class=" material-icons text-text text-xl mt-1">email</i>
-                        <a href="mailto:me@juliojpinto.com" class="hidden xl:block text-xl text-text kulim-park-regular ml-2">me@juliojpinto.com</a>
+                        <i class="material-icons text-text text-xl mt-1">email</i>
+                        <a href="mailto:me@juliojpinto.com" class="text-xl text-text kulim-park-regular ml-2">me@juliojpinto.com</a>
                     </div>
                     
                     <!-- Links section aligned to the right -->
@@ -68,13 +68,13 @@
           <!-- Right Column -->
           <div class="flex flex-col w-full h-full gap-6">
               <div class="text-lg bg-primary rounded-2xl p-4 lg:p-8">
-                  <div class="flex flex-col 2xl:flex-row justify-between items-center gap-6">
+                  <div class="flex flex-col 2xl:flex-row justify-between items-center gap-3 lg:gap-6">
                       <img class="rounded-2xl" src="public/me.png">
                       <p class="text-xl lg:text-3xl text-text long-cang-regular text-left place-self-start scale-[2] 2xl:place-self-end 2xl:-rotate-90 origin-left 2xl:-my-4 2xl:-mx-12 2xl:scale-[3]">SEI' 23</p>
                   </div>
               </div>
               <div class="bg-primary rounded-2xl p-4 lg:px-8 flex-grow min-h-0 overflow-auto">
-                  <p class="text-3xl font-semibold text-text my-1 kulim-park-semibold">About me</p>
+                  <p class="text-xl xl:text-4xl font-semibold text-text my-1 kulim-park-semibold">About me</p>
                   <div class="mt-2 md:mt-4">
                       <p class="text-sm lg:text-xl text-justify font-regular text-text kulim-park-light">
                         I'm a software engineering student at the University of Minho, currently in my 3rd year. I'm passionate about technology and software development, and I'm always looking for new challenges and opportunities to learn and grow.
@@ -100,6 +100,43 @@
       </div>
     </div>
   </div>
+
+  <div class="block md:hidden container mx-auto py-4 px-4 h-screen">
+    <div class="flex flex-col gap-6 h-full">
+      <!-- Header Section -->
+      <div class="bg-secondary rounded-2xl p-4 lg:p-8">
+        <p class="text-2xl md:text-5xl xl:text-8xl font-semibold text-text my-1 kulim-park-bold">Júlio Pinto</p>
+        <p class="text-md md:text-xl xl:text-4xl font-regular text-text kulim-park-light">software engineering student</p>
+        <p class="text-md md:text-xl xl:text-4xl font-regular text-text kulim-park-light">@ u.minho</p>
+      </div>
+  
+      <!-- Experience Section -->
+      <div class="bg-primary rounded-2xl p-4 lg:px-8 flex-grow min-h-0 overflow-auto">
+        <p class="text-xl xl:text-4xl font-semibold text-text my-1 kulim-park-semibold">Experience</p>
+        <div class="mt-4">
+          <div id="timeline-mobile"></div>
+        </div>
+      </div>
+  
+      <!-- Footer Section -->
+      <div class="lg:hidden bg-secondary w-full rounded-2xl px-8 py-4 mt-auto">
+        <div class="flex justify-between items-center">
+          <!-- Email section aligned to the left -->
+          <div class="flex flex-row items-center">
+            <i class="material-icons text-text text-xl mt-1">email</i>
+            <a href="mailto:me@juliojpinto.com" class="hidden xl:block text-xl text-text kulim-park-regular ml-2">me@juliojpinto.com</a>
+          </div>
+          
+          <!-- Links section aligned to the right -->
+          <div class="flex flex-row gap-6">
+            <a href="https://github.com/JulioJPinto/" class="kulim-park-regular text-xl text-text mx-1">Github</a>
+            <a href="https://www.linkedin.com/in/juliojpinto/" class="kulim-park-regular text-xl text-text mx-1">Linkedin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </body>
 
 </html>

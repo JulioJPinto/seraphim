@@ -30,8 +30,8 @@ const data = [
     }
 ];
 
-function createTimeline(data) {
-    const timeline = document.getElementById('timeline');
+function createTimeline(id) {
+    const timeline = document.getElementById(id);
 
     data.forEach(item => {
 
@@ -48,7 +48,7 @@ function createTimeline(data) {
             bullet.style.marginLeft = index === 0 ? '0' : '2px';
 
             const content = document.createElement('div');
-            content.className = 'content';
+            content.className = index === 0 ? 'content -m-[2px]' : 'content';
     
             if (index === 0) {
                 const title = document.createElement('a');
@@ -70,12 +70,15 @@ function createTimeline(data) {
             organizationDiv.appendChild(timelineItem);
         });
 
-    
+        timeline.className='flex flex-col gap-4';
         timeline.appendChild(organizationDiv);
     });    
 }
 
-createTimeline(data);
+function createTimelineOnload() {
+    createTimeline('timeline');
+    createTimeline('timeline-mobile');
+}
 
 /*
 const profileData = {
