@@ -81,8 +81,20 @@ function createTimelineOnload() {
 }
 
 function toggleMenu() {
+
     const menu = document.getElementById('menu');
-    menu.classList.toggle('hidden');
+    const menuIcon = document.getElementById('menu-icon');
+    const mobilebody = document.getElementById('mobile-content');
+
+    if (menuToggle) {
+        mobilebody.style.display = 'none';
+        menuIcon.style.display = 'none';
+        menu.style.display = 'block';
+    }
+}
+
+function closeMenu() {
+    const menuToggle = false;
 }
 
 /*

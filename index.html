@@ -25,7 +25,7 @@
   </script>
 </head>
 <body class="md:overflow-hidden" onload="createTimelineOnload()">
-  <div class="hidden md:block container mx-auto py-4 h-screen">
+  <div id="desktop" class="hidden md:block container mx-auto py-4 h-screen">
     <div class="flex flex-col lg:mx-16 h-full gap-6">
       <div class="flex flex-row justify-center gap-6 items-center h-[90%] lg:h-full">
           
@@ -101,44 +101,51 @@
     </div>
   </div>
 
-  <div class="block md:hidden container mx-auto py-4 px-4 h-screen">
+  <div id="mobile" class="block md:hidden container mx-auto py-4 px-4 h-screen">
     <div class="flex flex-col gap-6 h-full">
       <!-- Header Section -->
       <div class="bg-secondary rounded-2xl p-4 lg:p-8">
         <div class="flex flex-row justify-between items-center">
           <p class="text-2xl md:text-5xl xl:text-8xl font-semibold text-text my-1 kulim-park-bold">Júlio Pinto</p>
-          <span class="material-symbols-outlined" onclick="">
-            <i class="material-icons text-text text-3xl">menu</i>
+          <span class="material-symbols-outlined" onclick="toggleMenu()">
+            <i id="menu-icon" class="material-icons text-text text-3xl select-none" onclick="toggleMenu()">menu</i>
+            <i id="close-icon" class="hidden material-icons text-text text-3xl select-none" onclick="toggleMenu()">menu</i>
           </span>
         </div>        
         <p class="text-md md:text-xl xl:text-4xl font-regular text-text kulim-park-light">software engineering student</p>
         <p class="text-md md:text-xl xl:text-4xl font-regular text-text kulim-park-light">@ u.minho</p>
       </div>
-  
-      <!-- Experience Section -->
-      <div class="bg-primary rounded-2xl p-4 lg:px-8 flex-grow min-h-0 overflow-auto">
-        <p class="text-xl xl:text-4xl font-semibold text-text my-1 kulim-park-semibold">Experience</p>
-        <div class="mt-4">
-          <div id="timeline-mobile"></div>
-        </div>
-      </div>
-  
-      <!-- Footer Section -->
-      <div class="lg:hidden bg-secondary w-full rounded-2xl px-8 py-4 mt-auto">
-        <div class="flex justify-between items-center">
-          <!-- Email section aligned to the left -->
-          <div class="flex flex-row items-center">
-            <i class="material-icons text-text text-xl mt-1">email</i>
-            <a href="mailto:me@juliojpinto.com" class="hidden xl:block text-xl text-text kulim-park-regular ml-2">me@juliojpinto.com</a>
-          </div>
-          
-          <!-- Links section aligned to the right -->
-          <div class="flex flex-row gap-6">
-            <a href="https://github.com/JulioJPinto/" class="kulim-park-regular text-xl text-text mx-1">Github</a>
-            <a href="https://www.linkedin.com/in/juliojpinto/" class="kulim-park-regular text-xl text-text mx-1">Linkedin</a>
+
+      <!-- Menu Section -->
+
+
+      <div id="mobile-content" class="flex flex-col gap-6 h-full">
+        <!-- Experience Section -->
+        <div class="bg-primary rounded-2xl p-4 lg:px-8 flex-grow min-h-0 overflow-auto">
+          <p class="text-xl xl:text-4xl font-semibold text-text my-1 kulim-park-semibold">Experience</p>
+          <div class="mt-4">
+            <div id="timeline-mobile"></div>
           </div>
         </div>
+    
+        <!-- Footer Section -->
+        <div class="lg:hidden bg-secondary w-full rounded-2xl px-8 py-4 mt-auto">
+          <div class="flex justify-between items-center">
+            <!-- Email section aligned to the left -->
+            <div class="flex flex-row items-center">
+              <i class="material-icons text-text text-xl mt-1 select-none">email</i>
+              <a href="mailto:me@juliojpinto.com" class="hidden xl:block text-md text-text kulim-park-regular ml-2">me@juliojpinto.com</a>
+            </div>
+            
+            <!-- Links section aligned to the right -->
+            <div class="flex flex-row gap-6">
+              <a href="https://github.com/JulioJPinto/" class="kulim-park-regular text-md text-text mx-1">Github</a>
+              <a href="https://www.linkedin.com/in/juliojpinto/" class="kulim-park-regular text-md text-text mx-1">Linkedin</a>
+            </div>
+          </div>
+        </div>
       </div>
+      
     </div>
   </div>
   
