@@ -26,79 +26,78 @@
   </script>
 </head>
 <body class="md:overflow-hidden" onload="loadPage()">
-  <div id="desktop" class="hidden md:block container mx-auto py-4 h-screen select-none">
+  <div id="desktop" class="hidden md:block container mx-auto py-4 h-screen select-none overflow-y-auto">
     <div class="flex flex-col lg:mx-16 h-full gap-6">
-      <div class="flex flex-row justify-center gap-6 items-center h-[90%] lg:h-full">
-          
-          <!-- Left Column -->
-          <div class="flex flex-col w-full h-full gap-6">
-              <!-- Header Section -->
-              <div class="bg-secondary rounded-2xl p-4 lg:p-8">
-                  <p class="text-2xl md:text-5xl xl:text-8xl font-semibold text-text my-1 kulim-park-bold">Júlio Pinto</p>
-                  <p class="text-md md:text-xl xl:text-4xl font-regular text-text kulim-park-light">software engineering student</p>
-                  <p class="text-md md:text-xl xl:text-4xl font-regular text-text kulim-park-light">@ u.minho</p>
-              </div>
+        <div class="flex flex-row justify-center gap-6 items-center h-full">
 
-              <!-- Experience Section -->
-              <div class="bg-primary rounded-2xl p-4 lg:px-8 flex-grow min-h-0 overflow-auto">
-                  <p class="text-xl xl:text-4xl font-semibold text-text my-1 kulim-park-semibold">Experience</p>
-                  <div class="mt-4">
-                      <div id="timeline"></div>
-                  </div>
-              </div>
+            <!-- Left Column -->
+            <div class="flex flex-col w-full h-full gap-6 overflow-y-auto">
+                <!-- Header Section -->
+                <div class="bg-secondary rounded-2xl p-4 lg:p-8">
+                    <p class="text-2xl md:text-5xl xl:text-8xl font-semibold text-text my-1 kulim-park-bold">Júlio Pinto</p>
+                    <p class="text-md md:text-xl xl:text-4xl font-regular text-text kulim-park-light">software engineering student</p>
+                    <p class="text-md md:text-xl xl:text-4xl font-regular text-text kulim-park-light">@ u.minho</p>
+                </div>
 
-              <!-- Footer Section (Social Media Links) -->
-              <div class="hidden lg:block bg-secondary w-full rounded-2xl px-8 py-4 mt-auto">
-                <div class="flex justify-between items-center">
-                    <!-- Email section aligned to the left -->
-                    <div class="flex flex-row items-center">
-                        <i class="material-icons text-text text-xl mt-1">email</i>
-                        <a href="mailto:me@juliojpinto.com" class="text-xl text-text kulim-park-regular ml-2">me@juliojpinto.com</a>
-                    </div>
-                    
-                    <!-- Links section aligned to the right -->
-                    <div class="flex flex-row gap-6">
-                        <a href="https://github.com/JulioJPinto/" class="kulim-park-regular text-xl  text-text mx-1">Github</a>
-                        <a href="https://www.linkedin.com/in/juliojpinto/" class="kulim-park-regular text-xl  text-text mx-1">Linkedin</a>
+                <!-- Experience Section -->
+                <div class="bg-primary rounded-2xl p-4 lg:px-8 flex-grow min-h-0">
+                    <p class="text-xl xl:text-4xl font-semibold text-text my-1 kulim-park-semibold">Experience</p>
+                    <div class="mt-4">
+                        <div id="timeline"></div>
                     </div>
                 </div>
-              </div>
-            
-          </div>
 
-          <!-- Right Column -->
-          <div class="flex flex-col w-full h-full gap-6">
-              <div class="text-lg bg-primary rounded-2xl p-4 lg:p-8">
-                  <div class="flex flex-col 2xl:flex-row justify-between items-center gap-3 lg:gap-6">
-                      <img id="photo" class="rounded-2xl 2xl:w-[550px] 2xl:h-[550px]" src="public/me.png">
-                      <p id="caption" class="text-xl lg:text-3xl text-text long-cang-regular text-left place-self-start scale-[2] 2xl:place-self-end 2xl:-rotate-90 origin-left 2xl:mx-4 2xl:scale-[2.5]">SEI'23</p>
-                  </div>
-              </div>
-              <div class="bg-primary rounded-2xl p-4 lg:px-8 flex-grow min-h-0 overflow-auto">
-                  <p class="text-xl xl:text-4xl font-semibold text-text my-1 kulim-park-semibold">About me</p>
-                  <div class="mt-2 md:mt-4">
-                      <p class="text-sm lg:text-xl text-justify font-regular text-text kulim-park-light">
-                        I'm a software engineering student at the University of Minho, currently in my 3rd year. I'm passionate about technology and software development, and I'm always looking for new challenges and opportunities to learn and grow.
-                      </p>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="lg:hidden bg-secondary w-full rounded-2xl px-8 py-4 mt-auto" >
-        <div class="flex justify-between items-center">
-            <!-- Email section aligned to the left -->
-            <div class="flex flex-row items-center">
-                <i class=" material-icons text-text text-xl mt-1">email</i>
-                <a href="mailto:me@juliojpinto.com" class="hidden xl:block text-xl text-text kulim-park-regular ml-2">me@juliojpinto.com</a>
+                <!-- Footer Section (Social Media Links) -->
+                <div class="hidden lg:block bg-secondary w-full rounded-2xl px-8 py-4 mt-auto">
+                    <div class="flex justify-between items-center">
+                        <!-- Email section aligned to the left -->
+                        <div class="flex flex-row items-center">
+                            <i class="material-icons text-text text-xl mt-1">email</i>
+                            <a href="mailto:me@juliojpinto.com" class="text-xl text-text kulim-park-regular ml-2">me@juliojpinto.com</a>
+                        </div>
+
+                        <!-- Links section aligned to the right -->
+                        <div class="flex flex-row gap-6">
+                            <a href="https://github.com/JulioJPinto/" class="kulim-park-regular text-xl text-text mx-1">GitHub</a>
+                            <a href="https://www.linkedin.com/in/juliojpinto/" class="kulim-park-regular text-xl text-text mx-1">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <!-- Links section aligned to the right -->
-            <div class="flex flex-row gap-6">
-                <a href="https://github.com/JulioJPinto/" class="kulim-park-regular text-xl  text-text mx-1">Github</a>
-                <a href="https://www.linkedin.com/in/juliojpinto/" class="kulim-park-regular text-xl  text-text mx-1">Linkedin</a>
+
+            <!-- Right Column -->
+            <div class="flex flex-col w-full h-full gap-6 overflow-y-auto">
+                <div class="text-lg bg-primary rounded-2xl p-4 lg:p-8">
+                    <div class="flex flex-col 2xl:flex-row justify-between items-center gap-3 lg:gap-6">
+                        <img id="photo" class="rounded-2xl 2xl:w-[550px] 2xl:h-[550px]" src="public/me.png">
+                        <p id="caption" class="text-xl lg:text-3xl text-text long-cang-regular text-left place-self-start scale-[2] 2xl:place-self-end 2xl:-rotate-90 origin-left 2xl:mx-4 2xl:scale-[2.5]">SEI'23</p>
+                    </div>
+                </div>
+                <div class="bg-primary rounded-2xl p-4 lg:px-8 flex-grow min-h-0 overflow-auto">
+                    <p class="text-xl xl:text-4xl font-semibold text-text my-1 kulim-park-semibold">About me</p>
+                    <div class="mt-2 md:mt-4">
+                        <p class="text-sm lg:text-xl text-justify font-regular text-text kulim-park-light">
+                            I'm a software engineering student at the University of Minho, currently in my 3rd year. I'm passionate about technology and software development, and I'm always looking for new challenges and opportunities to learn and grow.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-      </div>
+        <div class="lg:hidden bg-secondary w-full rounded-2xl px-8 py-4 mt-auto">
+            <div class="flex justify-between items-center">
+                <!-- Email section aligned to the left -->
+                <div class="flex flex-row items-center">
+                    <i class="material-icons text-text text-xl mt-1">email</i>
+                    <a href="mailto:me@juliojpinto.com" class="hidden xl:block text-xl text-text kulim-park-regular ml-2">me@juliojpinto.com</a>
+                </div>
+
+                <!-- Links section aligned to the right -->
+                <div class="flex flex-row gap-6">
+                    <a href="https://github.com/JulioJPinto/" class="kulim-park-regular text-xl text-text mx-1">GitHub</a>
+                    <a href="https://www.linkedin.com/in/juliojpinto/" class="kulim-park-regular text-xl text-text mx-1">LinkedIn</a>
+                </div>
+            </div>
+        </div>
     </div>
   </div>
 
@@ -117,18 +116,17 @@
     </div>
       
       <!-- Menu Section -->
-      <div id="menu" class="hidden py-4">
-        <div class="flex flex-col gap-6">
-          <a onclick="toggleExperience()" id='exp-btn' class="bg-primary hover:bg-secondary hover:font-semibold  w-full py-2 rounded-2xl kulim-park-regular text-md text-text">Experience</a>
+      <div id="menu" class="hidden -my-2">
+        <div class="flex flex-col gap-2">
           <a onclick="toggleAboutMe()" id='abtme-btn' class=" bg-primary hover:bg-secondary hover:font-semibold  w-full py-2 rounded-2xl kulim-park-regular text-md text-text">About me</a>
-
+          <a onclick="toggleExperience()" id='exp-btn' class="bg-primary hover:bg-secondary hover:font-semibold  w-full py-2 rounded-2xl kulim-park-regular text-md text-text">Experience</a>
         </div>
       </div>
 
 
       <div id="mobile-content" class="block flex flex-col gap-6 h-full">
         <!-- Experience Section -->
-        <div id="experience" class="hidden bg-primary rounded-2xl p-4 lg:px-8 flex-grow min-h-0 overflow-auto">
+        <div id="experience" class="hidden bg-primary rounded-2xl p-4 lg:px-8 flex-grow min-h-0">
           <p class="text-xl xl:text-4xl font-semibold text-text my-1 kulim-park-semibold">Experience</p>
           <div class="mt-4">
             <div id="timeline-mobile"></div>
@@ -136,16 +134,16 @@
         </div>
 
         <!-- About Me -->
-        <div id="aboutme" class="block bg-primary rounded-2xl p-4 lg:px-8 flex-grow min-h-0 overflow-auto">
+        <div id="aboutme" class="block bg-primary rounded-2xl p-4 lg:px-8 flex-grow h-min-0">
           <p class="text-xl xl:text-4xl font-semibold text-text my-1 kulim-park-semibold">About Me</p>
           <p class="text-md lg:text-xl text-justify font-regular text-text kulim-park-light">
             I'm a software engineering student at the University of Minho, currently in my 3rd year. I'm passionate about technology and software development, and I'm always looking for new challenges and opportunities to learn and grow.
           </p>
           <div class="w-full mt-8">
-            <div class="text-lg bg-primary rounded-2xl p-4 lg:p-8">
-              <div class="flex flex-col 2xl:flex-row justify-between items-center gap-3 lg:gap-6">
+            <div class="text-lg bg-primary rounded-2xl">
+              <div class="flex flex-col mb-4 2xl:flex-row justify-between items-center gap-3 lg:gap-6">
                   <img id="mobile-photo" class="object-contain object-center rounded-2xl" src="public/me.png">
-                  <p id="mobile-caption" class="text-xl lg:text-3xl text-text long-cang-regular text-left place-self-start scale-[2.2] mt-1 2xl:place-self-end 2xl:-rotate-90 origin-left 2xl:-my-4 2xl:-mx-12 ">SEI'23</p>
+                  <p id="mobile-caption" class="text-xl mx-2 text-text long-cang-regular text-left place-self-start scale-[2.5] mt-1 origin-left">SEI'23</p>
               </div>
           </div>
         </div>
@@ -163,8 +161,8 @@
             
             <!-- Links section aligned to the right -->
             <div class="flex flex-row gap-6">
-              <a href="https://github.com/JulioJPinto/" class="kulim-park-regular text-md text-text mx-1">Github</a>
-              <a href="https://www.linkedin.com/in/juliojpinto/" class="kulim-park-regular text-md text-text mx-1">Linkedin</a>
+              <a href="https://github.com/JulioJPinto/" class="kulim-park-regular text-md text-text mx-1">GitHub</a>
+              <a href="https://www.linkedin.com/in/juliojpinto/" class="kulim-park-regular text-md text-text mx-1">LinkedIn</a>
             </div>
           </div>
         </div>

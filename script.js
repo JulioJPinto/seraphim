@@ -52,14 +52,14 @@ function createTimeline(id) {
     
             if (index === 0) {
                 const title = document.createElement('a');
-                title.className = 'title kulim-park-semibold text-md md:text-lg lg:text-xl text-text';
+                title.className = 'title kulim-park-semibold text-md md:text-lg lg:text-2xl text-text';
                 title.textContent = item.organization;
                 title.href = item.link;
                 content.appendChild(title);
             }
     
             const positionElem = document.createElement('div');
-            positionElem.className = 'position kulim-park-regular text-xs md:text-sm lg:text-md text-text';
+            positionElem.className = 'position kulim-park-regular text-xs md:text-sm lg:text-lg text-text';
             positionElem.textContent = position;
     
             content.appendChild(positionElem);
@@ -106,7 +106,7 @@ function toggleMenu() {
     const mobileBody = document.getElementById('mobile-content');
 
     mobileBody.className = 'hidden';
-    menu.className = 'block text-center py-4';
+    menu.className = 'block text-center -my-2';
     menuIcon.textContent = 'close';
 
 }
