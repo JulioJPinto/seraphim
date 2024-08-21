@@ -81,12 +81,10 @@ function createTimelineOnload() {
 }
 
 
-const menuStatus = false;
-
 function controleToggleMenu() {
-    const menu = document.getElementById('menu');
+
     const menuIcon = document.getElementById('menu-icon');
-    const mobileBody = document.getElementById('mobile-content');
+    const menuStatus = menuIcon.textContent === 'close';
 
     if (menuStatus) {
         closeMenu();
@@ -103,8 +101,8 @@ function toggleMenu() {
 
     mobileBody.className = 'hidden';
     menu.className = 'block text-center py-4';
+    menuIcon.textContent = 'close';
 
-    menuStatus = true;
 }
 
 function closeMenu() {
@@ -114,9 +112,9 @@ function closeMenu() {
     const mobileBody = document.getElementById('mobile-content');
 
     mobileBody.className = 'block flex flex-col gap-6 h-full';
-    menu.style.display = 'none';
+    menu.className = 'hidden';
+    menuIcon.textContent = 'menu';
 
-    menuStatus = false;
 }
 
 function toggleExperience() {
