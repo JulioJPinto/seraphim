@@ -145,3 +145,8 @@ function toggleAboutMe() {
 
 
 }
+
+
+document.addEventListener('menu-icon').addEventListener('click', controleToggleMenu);
+document.addEventListener('exp-btn').addEventListener('click', toggleExperience);
+document.addEventListener('abtme-btn').addEventListener('click', toggleAboutMe);
