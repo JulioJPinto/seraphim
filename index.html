@@ -25,7 +25,7 @@
   </script>
 </head>
 <body class="md:overflow-hidden" onload="createTimelineOnload()">
-  <div id="desktop" class="hidden md:block container mx-auto py-4 h-screen">
+  <div id="desktop" class="hidden md:block container mx-auto py-4 h-screen select-none">
     <div class="flex flex-col lg:mx-16 h-full gap-6">
       <div class="flex flex-row justify-center gap-6 items-center h-[90%] lg:h-full">
           
@@ -83,7 +83,7 @@
               </div>
           </div>
       </div>
-      <div class="lg:hidden bg-secondary w-full rounded-2xl px-8 py-4 mt-auto">
+      <div class="lg:hidden bg-secondary w-full rounded-2xl px-8 py-4 mt-auto" >
         <div class="flex justify-between items-center">
             <!-- Email section aligned to the left -->
             <div class="flex flex-row items-center">
@@ -101,32 +101,55 @@
     </div>
   </div>
 
-  <div id="mobile" class="block md:hidden container mx-auto py-4 px-4 h-screen">
+  <div id="mobile" class="block md:hidden container mx-auto py-4 px-4 h-screen select-none">
     <div class="flex flex-col gap-6 h-full">
       <!-- Header Section -->
       <div class="bg-secondary rounded-2xl p-4 lg:p-8">
         <div class="flex flex-row justify-between items-center">
-          <p class="text-2xl md:text-5xl xl:text-8xl font-semibold text-text my-1 kulim-park-bold">Júlio Pinto</p>
-          <span class="material-symbols-outlined" onclick="toggleMenu()">
-            <i id="menu-icon" class="material-icons text-text text-3xl select-none" onclick="toggleMenu()">menu</i>
-            <i id="close-icon" class="hidden material-icons text-text text-3xl select-none" onclick="toggleMenu()">menu</i>
-          </span>
+            <p class="text-2xl md:text-5xl xl:text-8xl font-semibold text-text my-1 kulim-park-bold">Júlio Pinto</p>
+            <span id="menu-icon" class="material-icons text-text text-3xl select-none" onclick="controleToggleMenu()">
+                menu
+            </span>
         </div>        
         <p class="text-md md:text-xl xl:text-4xl font-regular text-text kulim-park-light">software engineering student</p>
         <p class="text-md md:text-xl xl:text-4xl font-regular text-text kulim-park-light">@ u.minho</p>
+    </div>
+      
+      <!-- Menu Section -->
+      <div id="menu" class="hidden py-4">
+        <div class="flex flex-col gap-6">
+          <a onclick="toggleExperience()" class="bg-primary hover:bg-secondary hover:font-semibold  w-full py-2 rounded-2xl kulim-park-regular text-md text-text">Experience</a>
+          <a onclick="toggleAboutMe()" class=" bg-primary hover:bg-secondary hover:font-semibold  w-full py-2 rounded-2xl kulim-park-regular text-md text-text">About me</a>
+
+        </div>
       </div>
 
-      <!-- Menu Section -->
 
-
-      <div id="mobile-content" class="flex flex-col gap-6 h-full">
+      <div id="mobile-content" class="block flex flex-col gap-6 h-full">
         <!-- Experience Section -->
-        <div class="bg-primary rounded-2xl p-4 lg:px-8 flex-grow min-h-0 overflow-auto">
+        <div id="experience" class="hidden bg-primary rounded-2xl p-4 lg:px-8 flex-grow min-h-0 overflow-auto">
           <p class="text-xl xl:text-4xl font-semibold text-text my-1 kulim-park-semibold">Experience</p>
           <div class="mt-4">
             <div id="timeline-mobile"></div>
           </div>
         </div>
+
+        <!-- About Me -->
+        <div id="aboutme" class="block bg-primary rounded-2xl p-4 lg:px-8 flex-grow min-h-0 overflow-auto">
+          <p class="text-xl xl:text-4xl font-semibold text-text my-1 kulim-park-semibold">About Me</p>
+          <p class="text-md lg:text-xl text-justify font-regular text-text kulim-park-light">
+            I'm a software engineering student at the University of Minho, currently in my 3rd year. I'm passionate about technology and software development, and I'm always looking for new challenges and opportunities to learn and grow.
+          </p>
+          <div class="w-full mt-8">
+            <div class="text-lg bg-primary rounded-2xl p-4 lg:p-8">
+              <div class="flex flex-col 2xl:flex-row justify-between items-center gap-3 lg:gap-6">
+                  <img class="rounded-2xl" src="public/me.png">
+                  <p class="text-xl lg:text-3xl text-text long-cang-regular text-left place-self-start scale-[2.2] mt-1 2xl:place-self-end 2xl:-rotate-90 origin-left 2xl:-my-4 2xl:-mx-12 2xl:scale-[3]">SEI' 23</p>
+              </div>
+          </div>
+        </div>
+        </div>
+        
     
         <!-- Footer Section -->
         <div class="lg:hidden bg-secondary w-full rounded-2xl px-8 py-4 mt-auto">

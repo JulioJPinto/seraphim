@@ -80,21 +80,72 @@ function createTimelineOnload() {
     createTimeline('timeline-mobile');
 }
 
+
+const menuStatus = false;
+
+function controleToggleMenu() {
+    const menu = document.getElementById('menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const mobileBody = document.getElementById('mobile-content');
+
+    if (menuStatus) {
+        closeMenu();
+    } else {
+        toggleMenu();
+    }
+}
+
 function toggleMenu() {
 
     const menu = document.getElementById('menu');
     const menuIcon = document.getElementById('menu-icon');
-    const mobilebody = document.getElementById('mobile-content');
+    const mobileBody = document.getElementById('mobile-content');
 
-    if (menuToggle) {
-        mobilebody.style.display = 'none';
-        menuIcon.style.display = 'none';
-        menu.style.display = 'block';
-    }
+    mobileBody.className = 'hidden';
+    menu.className = 'block text-center py-4';
+
+    menuStatus = true;
 }
 
 function closeMenu() {
-    const menuToggle = false;
+
+    const menu = document.getElementById('menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const mobileBody = document.getElementById('mobile-content');
+
+    mobileBody.className = 'block flex flex-col gap-6 h-full';
+    menu.style.display = 'none';
+
+    menuStatus = false;
+}
+
+function toggleExperience() {
+
+    const experience = document.getElementById('experience');
+
+    experience.className = 'block bg-primary rounded-2xl p-4 lg:px-8 flex-grow min-h-0 overflow-auto';
+
+    const about = document.getElementById('aboutme');
+
+    about.className = 'hidden';
+
+    closeMenu();
+
+}
+
+function toggleAboutMe() {
+    
+    const about = document.getElementById('aboutme');
+    about.className = 'block bg-primary rounded-2xl p-4 lg:px-8 flex-grow min-h-0 overflow-auto';
+
+
+    const experience = document.getElementById('experience');
+
+    experience.className = 'hidden';
+
+    closeMenu();
+
+
 }
 
 /*
