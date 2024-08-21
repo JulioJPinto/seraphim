@@ -75,6 +75,10 @@ function createTimeline(id) {
     });    
 }
 
+function loadPage() {
+    createTimelineOnload();
+}
+
 function createTimelineOnload() {
     createTimeline('timeline');
     createTimeline('timeline-mobile');
@@ -91,6 +95,8 @@ function controleToggleMenu() {
     } else {
         toggleMenu();
     }
+
+    randomizePhoto();
 }
 
 function toggleMenu() {
@@ -145,6 +151,37 @@ function toggleAboutMe() {
 
 
 }
+
+const photos = [
+    {
+        src: 'public/me.png',
+        alt: 'SEI\'23'
+    },
+    {
+        src: 'public/bugsbyte.jpg',
+        alt: 'BugByte\'23'
+    },
+    {
+        src: 'public/sei24.jpg',
+        alt: 'SEI\'24'
+    }
+];
+
+function randomizePhoto () {
+    const photo = photos[Math.floor(Math.random() * photos.length)];
+    const photoElem = document.getElementById('photo');
+    photoElem.src = photo.src;
+
+    const photoCaption = document.getElementById('caption');
+    photoCaption.textContent = photo.alt;
+
+    const photoMobile = document.getElementById('mobile-photo');
+    photoMobile.src = photo.src;
+
+    const photoCaptionMobile = document.getElementById('mobile-caption');
+    photoCaptionMobile.textContent = photo.alt;
+}
+
 
 
 document.addEventListener('menu-icon').addEventListener('click', controleToggleMenu);
