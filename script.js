@@ -96,7 +96,7 @@ function controleToggleMenu() {
         toggleMenu();
     }
 
-    // randomizePhoto();
+    //randomizePhoto();
 }
 
 function toggleMenu() {
@@ -168,6 +168,7 @@ const photos = [
 ];
 
 function randomizePhoto () {
+    /*
     const photo = photos[Math.floor(Math.random() * photos.length)];
     const photoElem = document.getElementById('photo');
     photoElem.src = photo.src;
@@ -180,6 +181,7 @@ function randomizePhoto () {
 
     const photoCaptionMobile = document.getElementById('mobile-caption');
     photoCaptionMobile.textContent = photo.alt;
+    */
 }
 
 
