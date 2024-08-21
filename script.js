@@ -96,7 +96,7 @@ function controleToggleMenu() {
         toggleMenu();
     }
 
-    randomizePhoto();
+    // randomizePhoto();
 }
 
 function toggleMenu() {
