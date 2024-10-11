@@ -2,6 +2,7 @@ const data = [
     {
         organization: "CeSIUM",
         positions: [
+            "Vice-President",
             "Marketing Director",
             "Marketing Co-Director",
             "Collaborator"
@@ -15,7 +16,7 @@ const data = [
             "Co-Champion & Mentor",
             "Mentor"
         ],
-        date: "2022 - Present",
+        date: "2022 - 2024",
         link: "https://coderdojobraga.org"
     },
     {
@@ -52,41 +53,6 @@ function createTimeline(id) {
         item.positions.forEach((position, index) => {
             const timelineItem = document.createElement('div');
             timelineItem.className = 'timeline-item flex';
-            const data = [
-                {
-                    organization: "CeSIUM",
-                    positions: [
-                        "Marketing Director",
-                        "Marketing Co-Director",
-                        "Collaborator"
-                    ],
-                    date: "2021 - Present",
-                    link: "https://cesium.di.uminho.pt"
-                },
-                {
-                    organization: "CoderDojo Braga",
-                    positions: [
-                        "Co-Champion & Mentor",
-                        "Mentor"
-                    ],
-                    date: "2022 - Present",
-                    link: "https://coderdojobraga.org"
-                },
-                {
-                    organization: "Martins & Filhos, SA",
-                    positions: [
-                        "Software Engineering Intern"
-                    ],
-                    date: "Summer '24"
-                },
-                {
-                    organization: "Rolling Space",
-                    positions: [
-                        "Software Engineering Intern"
-                    ],
-                    date: "Summer '23"
-                }
-            ];
             
             // Pagination variables
             let currentPage = 1;
