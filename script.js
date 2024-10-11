@@ -35,6 +35,25 @@ const data = [
     }
 ];
 
+const education = [
+    {
+        institution: "University of Minho",
+        degrees : [
+            "Bachelor's in Software Engineering",
+            "Master's in Software Engineering"
+        ],
+        date: "2021 - Present",
+        link: "https://uminho.pt"
+    },
+    {
+        institution: "Escola Secundária Alberto Sampaio",
+        degrees : [
+            "Science and Technology"
+        ],
+        date: "2018 - 2021"
+    }
+];
+
 function createTimeline(id) {
     const timeline = document.getElementById(id);
 
