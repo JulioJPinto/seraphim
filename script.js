@@ -1,4 +1,12 @@
 const data = [
+    // {
+    //     organization: "SEI",
+    //     positions: [
+    //         "Organizing Committee",
+    //     ],
+    //     date: "Oct '24 - Mar '25",
+    //     link: "seium.org",
+    // },
     {
         organization: "CeSIUM",
         positions: [
