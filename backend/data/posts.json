@@ -1,0 +1,32 @@
+[
+    {
+      "title": "Exploring the Mountains",
+      "description": "A journey through the Rocky Mountains with stunning views.",
+      "cover": 1,
+      "images": [
+        { "url": "https://example.com/mountains1.jpg" },
+        { "url": "https://example.com/mountains2.jpg" },
+        { "url": "https://example.com/mountains3.jpg" }
+      ]
+    },
+    {
+      "title": "City Nights",
+      "description": "Capturing the nightlife and cityscapes in downtown areas.",
+      "cover": 2,
+      "images": [
+        { "url": "https://example.com/city1.jpg" },
+        { "url": "https://example.com/city2.jpg" }
+      ]
+    },
+    {
+      "title": "Desert Adventures",
+      "description": "Photographs from a trip across the Sahara Desert.",
+      "cover": 3,
+      "images": [
+        { "url": "https://example.com/desert1.jpg" },
+        { "url": "https://example.com/desert2.jpg" },
+        { "url": "https://example.com/desert3.jpg" }
+      ]
+    }
+  ]
+  

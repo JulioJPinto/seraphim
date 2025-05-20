@@ -1,0 +1,58 @@
+{   
+    "title": "Curriculum Vitae",
+    "description": "A brief overview of my professional and educational background.",
+    "experience": [
+        {
+            "organization": "CeSIUM",
+            "positions": [
+                "Vice-President",
+                "Marketing Director",
+                "Marketing Co-Director",
+                "Collaborator"
+            ],
+            "date": "2021 - Present",
+            "link": "https://cesium.di.uminho.pt"
+        },
+        {
+            "organization": "CoderDojo Braga",
+            "positions": [
+                "Co-Champion & Mentor",
+                "Mentor"
+            ],
+            "date": "2022 - 2024",
+            "link": "https://coderdojobraga.org"
+        },
+        {
+            "organization": "Martins & Filhos, SA",
+            "positions": [
+                "Software Engineering Intern"
+            ],
+            "date": "Summer '24"
+        },
+        {
+            "organization": "Rolling Space",
+            "positions": [
+                "Software Engineering Intern"
+            ],
+            "date": "Summer '23"
+        }
+    ],
+    "education": [
+        {
+            "institution": "University of Minho",
+            "degrees": [
+                "Bachelor's in Software Engineering",
+                "Master's in Software Engineering"
+            ],
+            "date": "2021 - Present",
+            "link": "https://uminho.pt"
+        },
+        {
+            "institution": "Escola Secundária Alberto Sampaio",
+            "degrees": [
+                "Science and Technology"
+            ],
+            "date": "2018 - 2021"
+        }
+    ]
+}
